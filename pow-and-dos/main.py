@@ -78,7 +78,7 @@ def happy_qsort():
     print('Give me the array to be sorted (blank separated) : ', end='')
     s = input()
     try:
-        assert(len(s) < 35000) # need tuning
+        assert len(s) < 35000 # need tuning
         arr = [ int(i) for i in s.split() ]
     except:
         print('bad')
